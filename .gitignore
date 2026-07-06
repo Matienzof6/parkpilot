@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+server/database/parking.db
+
+server/backups/
+
+.env
+
+.pm2/
+
+*.log
