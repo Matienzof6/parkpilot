@@ -134,7 +134,7 @@ ParkPilot/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/parkpilot.git
+git clone https://github.com/Matienzof6/parkpilot.git
 ```
 
 Move into the project
