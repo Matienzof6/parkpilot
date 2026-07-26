@@ -1,11 +1,10 @@
 # 🚗 ParkPilot
 
-A full-stack parking management application built to simplify and digitize the daily parking operations of a hotel Front Office.
+A full-stack parking management application built to replace spreadsheet-based parking management at a hotel reception.
 
 Designed for real-world use, the system provides receptionists with a fast and intuitive interface to manage vehicle occupancy, assign parking spaces, monitor upcoming departures, and instantly locate vehicles through a visual parking dashboard.
 
-> Developed as a real internal tool and currently used in production at a hotel reception.
-
+> **Real-world project currently used in production by a hotel reception to manage daily parking operations.**
 ---
 
 <img width="3762" height="1856" alt="Captura de pantalla 2026-07-06 230328" src="https://github.com/user-attachments/assets/6264da21-edf9-45d2-bb3b-c9c3a1776c71" />
@@ -101,31 +100,16 @@ Instead of creating a complex enterprise solution, the focus was simplicity, spe
 
 
 
-## 📁 Project Structure
+## 🏗 Architecture
 
 ```text
-ParkPilot/
-│
-├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── assets/
-│   │   └── App.jsx
-│   │
-│   └── package.json
-│
-├── server/
-│   ├── controllers/
-│   ├── routes/
-│   ├── services/
-│   ├── database/
-│   ├── app.js
-│   ├── server.js
-│   └── package.json
-│
-└── README.md
+React + Vite
+      │
+   REST API
+      │
+Node.js + Express
+      │
+    SQLite
 ```
 
 
@@ -186,60 +170,28 @@ npm run build
 **Move the dist folder into server**
 
 
-## 🚀 Current Features
+## 💡 What I Learned
 
-- Manage up to **50 parking spaces**
-- Add, edit and remove parking records
-- Automatic parking availability updates
-- Automatic checkout after departure date
-- Manual checkout option
-- Live occupancy statistics
-- Parking history
-- Upcoming departures page
-- Instant search by guest, room or license plate
-- Responsive dashboard
-- Real-time parking visualization
+Developing this project gave me practical experience with:
+
+- Designing and building REST APIs
+- Developing a complete full-stack application
+- React component architecture
+- Managing persistent data with SQLite
+- Creating software around real user requirements
+- Deploying an internal production application
+- Improving usability through continuous feedback from daily users
 
 ## 🚀 Future Improvements
 
-Although the application is already used daily, there are several ideas planned for future versions:
+- Integration with the hotel's parking barrier API
+- Automatic license plate recognition
+- Excel and PDF export
+- Backup and restore functionality
+- Advanced statistics and reports
+- Authentication and user roles
+- Multi-hotel support
 
-### Parking Integration
-- Connect with the hotel's parking barrier system through its API.
-- Automatically detect when a vehicle enters or leaves the parking.
-- Automatic checkout based on license plate recognition.
-
-### Dashboard Improvements
-- Daily occupancy statistics.
-- Weekly and monthly reports.
-- Parking usage analytics.
-- Occupancy charts.
-
-### Data Management
-- Export parking history to Excel or PDF.
-- Backup and restore the local database.
-- Advanced filtering and sorting.
-
-### User Experience
-- Automatic scroll to searched parking space.
-- Vehicle notifications.
-- Better mobile responsiveness.
-- Light/Dark theme support.
-
-### Future Scalability
-- Multi-hotel support.
-- Cloud synchronization.
-- Optional authentication and user roles.
-
-
-
-## Contributing
-
-Built with ❤️ to improve the daily workflow of hotel reception staff.
-
-If you have suggestions, ideas or feedback, feel free to reach out or open an issue in this repository.
-
-Contributions and different points of view are always welcome.
 
 ## 📄 License
 
@@ -247,10 +199,3 @@ This project is licensed under the MIT License.
 
 Feel free to use it as inspiration for your own projects.
 
-## 🌟 Final Thoughts
-
-What started as a simple idea to replace a manual parking log became a complete management application used in a real hotel environment.
-
-The project continues to evolve through continuous improvements, always focusing on simplicity, usability and solving real operational challenges.
-
-This repository documents not only the final product, but also the learning process behind building reliable software one step at a time.
